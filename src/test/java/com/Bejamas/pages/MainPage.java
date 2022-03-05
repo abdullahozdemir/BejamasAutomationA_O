@@ -2,6 +2,7 @@ package com.Bejamas.pages;
 
 import com.Bejamas.utilities.Driver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import static org.junit.Assert.*;
@@ -10,6 +11,8 @@ import static org.junit.Assert.*;
 public class MainPage {
 
     public MainPage(){PageFactory.initElements(Driver.get(),this);}
+
+    Actions actions = new Actions(Driver.get());
 
 
 
@@ -67,6 +70,9 @@ public class MainPage {
     @FindBy(xpath = "//span[@class='name-hour']")
     public WebElement verifyResultPage;
 
+    /*
+    This method verify the information of pup-up
+     */
     public void verifyPupUp(){
 
         assertTrue("Clear the form".contains(newQueryInfo.getText()));
@@ -86,6 +92,19 @@ public class MainPage {
                 "connection, a train with seats for persons with children and/or with bicycle" +
                 " transport option, as well as choose a connection based on the type of" +
                 " transport or carrier.").contains(connectionInfoQM.getAttribute("data-content")));
+    }
+
+    /*
+    This method check the all sign information pup-up
+     */
+    public void checkInfoPupUpIsWorking(){
+
+        actions.moveToElement(newQueryInfo).pause(1000).build().perform();
+        actions.moveToElement(addStationInfo).pause(1000).build().perform();
+        actions.moveToElement(calenderInfo).pause(1000).build().perform();
+        actions.moveToElement(timeInfo).pause(1000).build().perform();
+        actions.moveToElement(timeInfoQM).pause(1000).build().perform();
+        actions.moveToElement(connectionInfoQM).pause(1000).build().perform();
     }
 
     }

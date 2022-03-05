@@ -46,12 +46,7 @@ public class BejamasStepDefinitions {
     public void the_user_hover_over_the_module_sign() {
 
         //Check all info pup-up working correctly
-        actions.moveToElement(mainPage.newQueryInfo).pause(1000).build().perform();
-        actions.moveToElement(mainPage.addStationInfo).pause(1000).build().perform();
-        actions.moveToElement(mainPage.calenderInfo).pause(1000).build().perform();
-        actions.moveToElement(mainPage.timeInfo).pause(1000).build().perform();
-        actions.moveToElement(mainPage.timeInfoQM).pause(1000).build().perform();
-        actions.moveToElement(mainPage.connectionInfoQM).pause(1000).build().perform();
+        mainPage.checkInfoPupUpIsWorking();
 
     }
 
