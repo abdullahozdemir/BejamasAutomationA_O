@@ -1,10 +1,13 @@
 # BejamasAutomationA_O
 
-![Bejamas](https://drive.google.com/file/d/1sF_-f6hes0sJ2tq6jWQc0YGHb4kJME7M/view?usp=sharing)<br/>
-Please click>>>[BejamasAutomatin](https://drive.google.com/file/d/1ZrST5Amx7uWoTYyZoojxhrvd3-PsR6XM/view?usp=sharing) to watch automation
+
+![Bejamas1](https://github.com/abdullahozdemir/BejamasAutomationA_O/blob/master/Bejamas1.jpg)<br/>
+Please click>>>[BejamasAutomatin](https://drive.google.com/file/d/1ZrST5Amx7uWoTYyZoojxhrvd3-PsR6XM/view?usp=sharing) to watch automation<br/>
+Please click>>>[BugList](https://github.com/abdullahozdemir/BejamasAutomationA_O/blob/master/BejamasBugList.xlsx) to access bug list
 
 ### Hello everyone.<br/>
--I used maven project,<br/>
+-I used maven project and created my framework based on POM,<br/>
 -Selenium<br/>
 -JUnit<br/>
 -Cucumber BDD <br/> 
+-To get cucumber report please use **maven verify**
